@@ -106,7 +106,7 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1>Jungian Dream Interpreter</h1>
+        <h1>Dream Interpreter</h1>
         
         <!-- Dream Input Form -->
         <div class="dream-form">
@@ -133,7 +133,7 @@
             {% else %}
                 <!-- Interpretation Section -->
                 <div class="interpretation">
-                    <h2>Jungian Interpretation</h2>
+                    <h2>Interpretation</h2>
                     <div class="interpretation-text markdown-content">
                         {{ result.interpretation | safe }}
                     </div>
@@ -142,9 +142,7 @@
                 <!-- Image Section -->
                 <div class="image-container">
                     <h2>Dream Visualization</h2>
-                    <div class="prompt-box">
-                        <strong>Image:</strong>
-                    </div>
+                   
                     <img src="{{ result.image_url }}" alt="Dream visualization" class="img-fluid">
                 </div>
             {% endif %}
